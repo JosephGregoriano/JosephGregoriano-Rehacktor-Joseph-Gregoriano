@@ -12,12 +12,14 @@ export default function CardGame({ game }) {
     <h2 className="text-xl font-bold mb-2">{game.name}</h2>
     <p className="text-sm text-gray-600 mb-1">{genres}</p>
     <p className="text-sm text-gray-500 mb-3">Uscita: {game.released}</p>
-    <Link
-    to={`/games/${game.slug}/${game.id}`}
-    className="mt-auto inline-block text-white py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300 ease-in-out"
-    >
-    Visita il gioco
-    </Link>
+   
+<a
+  class="mt-auto inline-block text-white py-2 px-4 rounded bg-black bg-opacity-50"
+  href="/games/satisfactory/58806"
+>
+  Visita il gioco
+</a>
+
     </article>
   );
 }
